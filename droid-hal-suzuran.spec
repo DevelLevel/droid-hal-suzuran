@@ -9,6 +9,14 @@
 
 %define installable_zip 1
 
+%define straggler_files \
+/fstab.qcom\
+/init.cm.rc\
+/init.qcom.rc\
+/ueventd.qcom.rc\
+/init.qcom.usb.rc\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
